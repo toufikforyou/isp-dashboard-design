@@ -1,0 +1,437 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
+@import url("https://fonts.maateen.me/mukti/font.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Mukti", Arial, sans-serif !important;
+  /* font-family: 'Roboto', sans-serif; */
+  background: #e5e5e5;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+div.header-digain {
+  width: 100%;
+  background: #18303c;
+  overflow: hidden;
+}
+div.top-menu {
+  width: 100%;
+  padding: 0 0 0 15px;
+}
+div.companyLogo {
+  width: 30%;
+  display: inline-block;
+}
+div.companyLogo img {
+  width: 60px;
+}
+div.responciveIcon {
+  float: right;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  margin: 12px;
+  display: none;
+}
+div.profile {
+  width: 60%;
+  float: right;
+}
+div.profile-block {
+  display: block !important;
+}
+div.admin-area {
+  float: right;
+}
+a.dropdown-toggle::after {
+  display: none;
+}
+
+div.adminImage {
+  display: inline-block;
+  padding: 0px 10px 0px 5px;
+  margin-top: -5px;
+}
+div.adminImage img {
+  width: 30px;
+  border-radius: 50px;
+}
+div.admin-name {
+  margin: 5px;
+}
+div.admin-name span {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+div.menuDropdown {
+  margin-left: 20px;
+}
+/* SITEBAR MENU STYLE CSS */
+section#mainSection {
+  width: 100%;
+}
+section#siteBarMenu {
+  width: 25%;
+  float: left;
+  background: #38525f;
+}
+section.display-block {
+  display: block !important;
+}
+div.sitebar-item {
+  width: 100%;
+}
+div.sitebar-item ul {
+  margin: 0;
+  padding: 0;
+}
+div.sitebar-item ul a {
+  text-decoration: none;
+}
+div.sitebar-item ul li {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 20px;
+  background: #2b4a1d;
+  border-bottom: 1px solid #757575;
+}
+div.sitebar-item ul li:hover {
+  background: #2960c5;
+}
+div.sitebar-item ul li span {
+  margin: 5px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+}
+.iconStyle {
+  color: rgba(255, 255, 255, 0.65);
+  text-align: center;
+  margin-right: 5px;
+}
+li#dropdownList {
+  background: #00a667;
+}
+li#dropdownList:hover {
+  background: #3b5fa2;
+}
+/*=== INDEX PAGE DEGAIN CSS ===*/
+section#contentBody {
+  width: 75%;
+  float: right;
+}
+div.contentHeader {
+  text-transform: uppercase;
+  background: #2b4a1d;
+  color: white;
+  padding: 11px 20px;
+  border-bottom: 1px solid #757575;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+div.contentTitle {
+  transition: 1s;
+  width: 90%;
+  margin: 0 auto;
+  border: 2px solid #ddd;
+  border-radius: 3px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  background: white;
+}
+div.contentHead {
+  background: #00a667 !important;
+  border-radius: 3px;
+  border: 1px solid #00a9a0;
+  padding: 5px 10px;
+  color: white;
+}
+div.padding {
+  padding: 30px 20px;
+}
+div.userOverView {
+  padding: 10px 10px;
+}
+div.box_user {
+  color: rgb(117, 12, 143);
+  padding: 29px;
+  border: 2px solid #ddd;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+div.box_user p {
+  font-size: 15px;
+  text-align: center;
+  font-weight: 700;
+  color: #636161;
+}
+div.box_user span {
+  font-size: 30px;
+}
+#boxIconStyle {
+  margin-right: 7px;
+  font-size: 30px;
+}
+
+/*=== INPUT FORM DEGAIN ===*/
+div.form-style {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+div.form-style input:focus,
+div.form-style select:focus,
+div.form-style textarea:focus,
+div.form-button button:focus {
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 0 0 1px rgb(8 160 90 / 50%);
+}
+div.form-style input,
+div.form-style select,
+div.form-style textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid #9c9494;
+  font-family: inherit;
+  border-radius: 4px;
+  padding: 6px;
+  outline: 0;
+  /* line-height: 1px; */
+}
+
+div.form-style.success input,
+div.form-style.success select,
+div.form-style.success textarea {
+  border-color: #1fc062;
+}
+
+div.form-style.error input,
+div.form-style.error select,
+div.form-style.error textarea {
+  border-color: #d33b2a;
+}
+
+div.form-style i {
+  visibility: hidden;
+  position: absolute;
+  top: 11px;
+  right: 10px;
+}
+
+div.form-style.success i.fa-check-circle {
+  visibility: visible;
+  color: #1fc062;
+}
+
+div.form-style.error i.fa-exclamation-circle {
+  visibility: visible;
+  color: #d33b2a;
+}
+
+div.form-style small {
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+div.form-style.error small {
+  visibility: visible;
+  color: #d33b2a;
+}
+
+div.formChekbox {
+  margin-bottom: 20px;
+}
+div.form-button button {
+  display: block;
+  outline: 0;
+  width: 100%;
+  padding: 6px;
+  background: #0d6efd;
+  border: 1px solid #0d6efd;
+  border-radius: 5px;
+  color: white;
+}
+
+div.form-button button:focus {
+  border: 1px solid green;
+}
+
+div.lineStatusbtn button {
+  margin-bottom: 5px;
+}
+
+/* CUSTOMER PAGE MODAL DEGAIN */
+
+.form_style input {
+  display: block;
+  width: 50%;
+  border: 1px solid #9c9494;
+  font-family: inherit;
+  border-radius: 4px;
+  padding: 6px;
+  outline: 0;
+  line-height: 1px;
+}
+.lineStatus form {
+  width: 50%;
+  float: left;
+}
+/*=== INPUT FORM DEGAIN ===*/
+
+/*=== NEW ADMIN REGISTATION FORM DIGAIN START ===*/
+div.userForm {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: white;
+  border-radius: 5px;
+}
+
+div.link {
+  cursor: pointer;
+  color: #0d6efd;
+}
+/*=== NEW ADMIN REGISTATION FORM DIGAIN END ===*/
+/*=== ADMIN REGISTATION FORM DIGAIN START ===*/
+div.userTable {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+/*=== ADMIN REGISTATION FORM DIGAIN END ===*/
+
+/*=== DATATABLE CSS DEGAIN STAIRT ===*/
+#dataTABLE th,
+#dataTABLE tr {
+  text-align: center;
+}
+.form-control:focus {
+  box-shadow: 0 0 0 0.1rem rgb(13 110 253 / 25%);
+}
+.btn-check:focus + .btn-success,
+.btn-success:focus,
+.btn-check:focus + .btn-danger,
+.btn-danger:focus {
+  box-shadow: 0 0 0 0.1rem rgb(60 153 110 / 50%);
+}
+/*=== DATATABLE CSS DEGAIN END ===*/
+
+/*=== NEW RECOURD CSS DEGAIN STAIRT ===*/
+.formCheck {
+  display: block;
+  width: 50%;
+  float: left;
+  margin-bottom: 10px;
+}
+/*=== NEW RECOURD CSS DEGAIN END ===*/
+
+/*=== MODAL BOX CSS DEGAIN END ===*/
+
+div.modal-dialog {
+  max-width: 95%;
+}
+h5.text {
+  color: #2b4a1d;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+div.lineStatus {
+  width: 100%;
+  overflow: hidden;
+}
+div.widthline {
+  width: 60%;
+  float: left;
+}
+div.buttonline {
+  width: 30%;
+  float: right;
+}
+/*=== MODAL BOX CSS DEGAIN END ===*/
+/*=== PROFILE CSS DEGAIN STIRT ===*/
+div.social-prof {
+  text-align: center;
+}
+
+div.social-prof .wrapper {
+  width: 70%;
+  margin: auto;
+  margin-top: -100px;
+}
+div.bacground-img {
+  height: 300px;
+  background-size: cover;
+  background-position: center center;
+}
+div.social-prof img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 5px solid #fff;
+}
+
+div.social-prof h3 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 0;
+  color: #00a667;
+}
+
+div.social-prof p {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #619b5a;
+}
+/*=== PROFILE CSS DEGAIN END ===*/
+
+/*POPUP MSG*/
+
+.popup-success {
+  transition: 300ms ease-in-out 250ms;
+  color: white;
+  background-color: #242526;
+  border-color: #242526;
+  padding: 10px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  letter-spacing: 1px;
+  z-index: 11;
+}
+.popup-error {
+  transition: 300ms ease-in-out 250ms;
+  color: #ff0000e6;
+  background-color: #242526;
+  border-color: #242526;
+  padding: 10px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 11;
+}

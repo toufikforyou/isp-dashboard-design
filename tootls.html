@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="images/company logo.png" rel="icon" type="image/png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <header id="topMenu">
+        <div class="header-digain">
+            <div class="top-menu">
+                <div class="companyLogo">
+                    <a href="index.html">
+                        <img src="images/company logo.png" alt="COMPANY LOGO">
+                    </a>
+                </div>
+                <div class="responciveIcon">
+                    <i class="fas fa-align-justify"></i>
+                </div>
+                <div class="profile">
+                    <div class="admin-area">
+                        <div class="admin-name">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="adminImage">
+                                    <img src="images/admin-profile.png" alt="admin-photo">
+                                </div>
+                                <span>Toufik hasan</span>
+                                <i style="color:green;" class="fas fa-check-circle"></i>
+                            </a>
+                            <div class="dropdown-menu menuDropdown">
+                                <a class="dropdown-item" href="profile.html">My Profile</a>
+                                <a class="dropdown-item" href="edit-account.html">Edit Account</a>
+                                <a class="dropdown-item" href="change-passcord.html">Change Password</a>
+                                <a class="dropdown-item" href="logout.html">Log Out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="mainSection">
+        <section id="siteBarMenu">
+            <div class="sitebar-item">
+                <ul class="navigation-main">
+                    <li style="background: #00a667;">
+                        <span style="color:white;"><strong>Control Panel</strong></span>
+                        <i style="color: white;text-align: center; display:none;"
+                            class="fas fa-ellipsis-h iconStyle"></i>
+                    </li>
+
+
+                    <a href="index.html">
+                        <li>
+                            <i class="fas fa-hourglass-half fa-spin iconStyle"></i><span>Dashboard</span>
+                        </li>
+                    </a>
+                    <li id="dishNETWORK" style="cursor:pointer;"><i class="fas fa-satellite iconStyle"></i><span>Dish
+                            Network</span>
+                        <i style="float: right;" class="fas fa-chevron-down iconStyle"></i>
+                    </li>
+                    <div class="dishNETWORK" style="display:none;">
+                        <div class="side-bar-menu">
+                            <ul>
+                                <a href="new-customer.html">
+                                    <li id="dropdownList"><i class="fas fa-plus-circle iconStyle"></i><span>New
+                                            Customer</span></li>
+                                </a>
+                                <a href="customer-online.html">
+                                    <li id="dropdownList"><i class="fab fa-pagelines iconStyle"></i><span>Register
+                                            Customer</span>
+                                    </li>
+                                </a>
+                                <a href="customer-dish.html">
+                                    <li id="dropdownList"><i class="fas fa-users iconStyle"></i><span>All
+                                            Customer</span>
+                                    </li>
+                                </a>
+                                <a href="payment-dish.html">
+                                    <li id="dropdownList"><i class="fas fa-file-invoice iconStyle"></i><span>Payment
+                                            Now</span>
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <li id="adminUSER" style="cursor:pointer;"><i
+                            class="fas fa-users-cog iconStyle"></i><span>Administors</span>
+                        <i style="float: right;" class="fas fa-chevron-down iconStyle"></i>
+                    </li>
+                    <div class="adminUSER" style="display:none;">
+                        <div class="side-bar-menu">
+                            <ul>
+                                <a href="new-admin.html">
+                                    <li id="dropdownList"><i class="fas fa-plus-circle iconStyle"></i><span>New
+                                            User</span></li>
+                                </a>
+                                <a href="admin.html">
+                                    <li id="dropdownList"><i class="fas fa-users-cog iconStyle"></i><span>All
+                                            User</span></li>
+                                </a>
+                                <a href="history-fees.html">
+                                    <li id="dropdownList"><i class="fas fa-file-invoice iconStyle"></i><span>Debit and
+                                            Credit</span>
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <li id="billerUSER" style="cursor:pointer;">
+                        <i class="fas fa-user-friends iconStyle"></i>
+                        <span>Biller User</span>
+                        <i style="float: right;" class="fas fa-chevron-down iconStyle"></i>
+                    </li>
+                    <div class="billerUSER" style="display:none;">
+                        <div class="side-bar-menu">
+                            <ul>
+                                <a href="new-biller.html">
+                                    <li id="dropdownList"><i class="fas fa-plus-circle iconStyle"></i><span>New
+                                            Biller</span></li>
+                                </a>
+                                <a href="biller.html">
+                                    <li id="dropdownList"><i class="fas fa-user-friends iconStyle"></i><span>All
+                                            Biller</span></li>
+                                </a>
+                                <a href="payment-biller.html">
+                                    <li id="dropdownList"><i class="fas fa-history iconStyle"></i><span>Payment
+                                            History</span>
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <li id="reportNETWORK" style="cursor:pointer;">
+                        <i class="fas fa-exclamation-triangle iconStyle"></i>
+                        <span>Report Dish</span>
+                        <i style="float: right;" class="fas fa-chevron-down iconStyle"></i>
+                    </li>
+                    <div class="reportNETWORK" style="display:none;">
+                        <div class="side-bar-menu">
+                            <ul>
+                                <a href="new-report.html">
+                                    <li id="dropdownList"><i class="fas fa-plus-circle iconStyle"></i><span>New
+                                            Report</span></li>
+                                </a>
+                                <a href="report.html">
+                                    <li id="dropdownList">
+                                        <i class="fas fa-exclamation-triangle iconStyle"></i>
+                                        <span>All Report</span>
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <li id="newRecord" style="cursor:pointer;"><i
+                            class="fas fa-wave-square iconStyle"></i><span>Record</span>
+                        <i style="float: right;" class="fas fa-chevron-down iconStyle"></i>
+                    </li>
+                    <div class="newRecord" style="display:none;">
+                        <div class="side-bar-menu">
+                            <ul>
+                                <a href="new-record.html">
+                                    <li id="dropdownList"><i class="fas fa-plus-circle iconStyle"></i><span>New
+                                            Record</span></li>
+                                </a>
+                                <a href="record.html">
+                                    <li id="dropdownList">
+                                        <i class="fas fa-wave-square iconStyle"></i>
+                                        <span>All Record</span>
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="tootls.html">
+                        <li>
+                            <i class="fas fa-cog fa-pulse iconStyle"></i><span>Tools</span>
+                        </li>
+                    </a>
+                    <li id="tableMenu" style="cursor:pointer;">
+                        <i class="fas fa-table iconStyle"></i><span>Table</span>
+                        <i style="float: right;" class="fas fa-chevron-down iconStyle"></i>
+                    </li>
+                    <div class="tableMenu" style="display:none;">
+                        <div class="side-bar-menu">
+                            <ul>
+                                <a href="table.html">
+                                    <li id="dropdownList"><i class="fas fa-table iconStyle"></i><span>Data Table</span></li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="contact-info.html">
+                        <li><i class="fas fa-envelope-open-text iconStyle"></i><span>Contact Info</span></li>
+                    </a>
+                    <li style="background: #00a667;">
+                        <span style="color:white;"><strong>Admin Account</strong></span>
+                        <i style="color: white;text-align: center; display:none;"
+                            class="fas fa-ellipsis-h iconStyle"></i>
+                    </li>
+
+                    <a href="profile.html">
+                        <li><i class="fas fa-user iconStyle"></i><span>My Profile</span></li>
+                    </a>
+
+                    <a href="edit-account.html">
+                        <li><i class="far fa-edit iconStyle"></i><span>Edit Account</span></li>
+                    </a>
+
+                    <a href="change-passcord.html">
+                        <li><i class="fas fa-key iconStyle"></i><span>Setting</span></li>
+                    </a>
+                    <div class="devoloper">
+                        <li style="background: #00a667;">
+                            <span style="color:white;"><strong>Web Developer</strong></span>
+                            <i style="color: white;text-align: center; display:none;"
+                                class="fas fa-ellipsis-h iconStyle"></i>
+                        </li>
+                        <a href="https://www.facebook.com/toufikforyou" target="_blank">
+                            <li><i class="fab fa-facebook iconStyle"></i><span>Facebook</span></li>
+                        </a>
+                        <a href="https://x.com/toufikforyou" target="_blank">
+                            <li><i class="fab fa-twitter iconStyle"></i><span>Twitter</span></li>
+                        </a>
+                        <a href="https://www.youtube.com/@toufikforyou" target="_blank">
+                            <li><i class="fab fa-youtube iconStyle"></i><span>Youtube</span></li>
+                        </a>
+                        <a href="https://www.linkedin.com/in/toufikforyou/" target="_blank">
+                            <li><i class="fab fa-linkedin iconStyle"></i><span>Linkedin</span></li>
+                        </a>
+                    </div>
+                </ul>
+            </div>
+        </section>
+        <!-- This section is dashboard control in html tags -->
+        <section id="contentBody">
+            <div class="contentHeader">
+                <span><i style="margin-right: 10px;" class="fas fa-cog fa-pulse"></i>Tools</span>
+            </div>
+            <!-- This div is dashboard item vew in html tags -->
+
+        </section>
+    </section>
+    <script src="js/application.js" type="text/javascript"></script>
+    <script src="js/functions.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
