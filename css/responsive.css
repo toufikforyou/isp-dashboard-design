@@ -1,0 +1,135 @@
+@media screen and (max-width: 900px) {
+    section#siteBarMenu{
+        width: 30% !important;
+    }
+    section#contentBody{
+        width: 70% !important;
+    }
+}
+@media screen and (max-width: 768px) {
+    div.userForm {
+        width: 98%;
+    }
+    section#siteBarMenu{
+        width: 100% !important;
+        display: none;
+    }
+    section#contentBody{
+        
+        width: 100% !important;
+    }
+    section.content-top{
+        margin-top: 10px;
+      }
+    div.responciveIcon{
+        display: block !important;
+    }
+    div.profile {
+        width: 150% !important;
+        border-top: 1px solid white;
+        background: #2b4a1d;
+        text-align: right;
+        display: none;
+    }
+    
+    div.admin-area {
+        width: 100%;
+        float: left;
+    }
+    .dropdown-menu.show {
+        width: 80% !important;
+    }
+    div.menuDropdown {
+        margin-left: 50px;
+    }
+    /*== DATA TABLE CODE RESPONCIVE CSS ==*/
+    div.dataTables_length label {
+        width: 100%;
+        margin-left: 12px;
+        margin-bottom: 10px;
+    }
+    div.dataTables_wrapper div.dataTables_filter label {
+        width: 100%;
+    }
+    div.dataTables_length select {
+        width: 180px !important;
+        margin-left: 16px;
+      }
+      div.dataTables_filter input {
+        width: 180px !important;
+      }
+
+    /*== DATA TABLE CODE RESPONCIVE CSS ==*/
+    table.table.table-striped.table-bordered {
+        font-size: 12px;
+    }
+    /*== PROFILE RESPONSIVE CSS ==*/
+    div.bacground-img{
+        height: 200px;
+    }
+    div.social-prof h3 {
+        font-size: 20px;
+    }
+    div.social-prof p {
+        font-size: 12px;
+    }
+   
+}
+@media screen and (max-width: 550px) {
+    div.buttonCustom li {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 500px) {
+    div.modal-header h5{
+        font-size: 15px;
+    }
+    .btn{
+        font-size: 10px;
+    }
+    div.buttonCustom li {
+        padding: 5px 5px;
+        font-size: 12px;
+        margin: 0px 0px;
+    }
+    div.payment-header h3 {
+        padding: 10px;
+        font-size: 15px;
+    }
+    div.pay-date-today {
+        font-size: 12px;
+    }
+    div.pay-date-today span {
+        font-size: 11px;
+    }
+    div.payment-in-out,
+    div.payment-in-out h5 {
+        font-size: 12px;
+    }
+
+    div.buttonCustom li {
+        margin: 5px 0px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    div.dataTables_length select {
+        width: 100px !important;
+        margin-left: 16px;
+    }
+    div.dataTables_filter input {
+        width: 100px !important;
+    }
+    .formCheck {
+        width: 100%;
+    }
+    div.buttonCustom li {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 250px) {
+    div.buttonCustom li {
+        width: 100%;
+        display: block;
+    }
+}
